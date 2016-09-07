@@ -43,4 +43,20 @@
 
         e.preventDefault();
     });
+
+    var current = 1;
+    function autoScroll(){
+        if(current == 1) return false;
+
+        var links = $('#menu ul li a');
+        links.eq(current%(links.length)).trigger('click',[true]);
+        current++;
+    }
+
+    //duration for autoscroll
+    var duration = -1,
+        intvl  = setInterval(function () {
+            autoScroll()
+        },duration*1000);
+
 })(jQuery);
