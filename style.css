@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #090909;
+    background-color: #f4f4f4;
+    font-size: 16px;
+}
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+header{
+    text-transform: uppercase;
+    background: url("img/bg.png") repeat-x bottom center;
+    height: 40px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc ;
+}
+
+.slider{
+    margin: auto;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 5px;
+    background: url("img/bg.png") repeat-x bottom center;
+    padding: 30px;
+    width: 900px;
+    overflow: hidden;
+}
+
+.slides{
+    height: 390px;
+    width: 900px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.slide{
+    background-color: #a7a7a7;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    float: left;
+
+}
+
+.slide>img{
+    width: 100%;
+    height: 99%;
+}
+
+nav#menu{
+    height: 50px;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu li{
+    margin-left: -4px;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product, .sep{
+    margin: 5px;
+}
+
+.product img{
+    height: 100%;
+    width: 100%;
+}
+
+li.active, li.active:hover{
+    background: url("img/active_bg.png") no-repeat;
+}
+
+li.active{
+   cursor: default;
+}
+
+.sep{
+    width: 2px;
+    margin-right: -2px;
+}
+
+#menu li a{
+    display: block;
+
+}
